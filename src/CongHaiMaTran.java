@@ -13,8 +13,8 @@ public class CongHaiMaTran {
         System.out.println("So phan tu trong hang la: ");
         int soPhanTu = scanner.nextInt();
 
-        int[][] maTran_1 = new int[soPhanTu][soHang];
-        int[][] maTran_2 = new int[soPhanTu][soHang];
+        int[][] maTran_1 = new int[soHang][soPhanTu];
+        int[][] maTran_2 = new int[soHang][soPhanTu];
 
         askData(maTran_1, 1, scanner);
         askData(maTran_2, 2, scanner);
@@ -45,7 +45,7 @@ public class CongHaiMaTran {
             System.out.println("Hang so: " + (b + 1));
             for (int c = 0; c < array[b].length; c++) {
                 System.out.println("Phan tu thu " + (c + 1) + " trong hang " + (b + 1) + " la: ");
-                array[c][b] = scanner.nextInt();
+                array[b][c] = scanner.nextInt();
             }
         }
     }
