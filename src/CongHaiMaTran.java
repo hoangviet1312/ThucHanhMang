@@ -28,6 +28,7 @@ public class CongHaiMaTran {
 
     static void inMang(int[][] array, String soBang) {
         System.out.println("Bang " + soBang);
+
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
                 int number = array[i][j];
@@ -39,6 +40,7 @@ public class CongHaiMaTran {
 
     static void askData(int[][] array, int bangSo, Scanner scanner) {
         System.out.println("Nhap cac gia tri cua ma tran " + bangSo);
+
         for (int b = 0; b < array.length; b++) {
             System.out.println("Hang so: " + (b + 1));
             for (int c = 0; c < array[b].length; c++) {
